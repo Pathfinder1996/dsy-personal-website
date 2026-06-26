@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>修課筆記與專題 | 戴聖宴</title>
+    <link rel="icon" type="image/png" href="public/images/favicon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="src/css/base.css" />
+    <link rel="stylesheet" href="src/css/layout.css" />
+    <link rel="stylesheet" href="src/css/components.css" />
+  </head>
+
+  <body id="top">
+    <header class="site-header">
+      <div class="container header-container">
+        <a class="home-link" href="index.html" aria-label="回到首頁">
+          <span class="home-icon" aria-hidden="true">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              focusable="false"
+            >
+              <path d="M3 11L12 3l9 8"></path>
+              <path d="M5 10v10h14V10"></path>
+              <path d="M9 20v-6h6v6"></path>
+            </svg>
+          </span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="開啟選單"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" aria-label="主要導覽列">
+          <a href="index.html#about">自我介紹</a>
+          <a href="index.html#projects">作品集</a>
+          <a href="index.html#school-projects">修課筆記與專題</a>
+          <a href="index.html#education">教育與工作經歷</a>
+        </nav>
+      </div>
+    </header>
+  
+    <main>
+      <section class="section page-hero-section">
+        <div class="container">
+          <h1 class="page-title">修課作業與專題彙整</h1>
+          <p class="page-description">課程總覽與技術應用整理</p>
+
+          <div class="course-table" id="all-school-project-list"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-container">
+        <a class="back-to-top" href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <script src="src/data/school-projects.js"></script>
+    <script src="src/js/render-all-school-projects.js"></script>
+    <script src="src/js/main.js"></script>
+  </body>
+</html>
