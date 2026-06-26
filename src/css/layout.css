@@ -60,13 +60,15 @@
 
 .hero-container {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 420px);
   align-items: center;
-  gap: 3rem;
+  gap: 4rem;
 }
 
 .hero-content {
-  max-width: 860px;
+  max-width: 760px;
+  min-width: 0;
+  justify-self: start;
 }
 
 /* =========================

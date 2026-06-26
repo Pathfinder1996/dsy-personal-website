@@ -64,9 +64,17 @@
       <section class="hero-section">
         <div class="container hero-container">
           <div class="hero-content">
-            <h1 id="profile-name"></h1>
+            <h1 id="profile-name">戴聖宴</h1>
 
-            <p class="hero-description" id="profile-description"></p>
+            <p class="hero-description" id="profile-description">
+              雲端工程師學習中...
+            </p>
+
+            <div class="hero-career">
+              <p id="profile-career-goal" class="hero-career-goal">
+                職涯目標: Cloud Engineer → DevOps → SRE → Cloud Architect
+              </p>
+            </div>
 
             <div class="hero-actions">
               <a
@@ -85,37 +93,58 @@
               aria-label="履歷與社群連結"
             ></div>
           </div>
+
+          <aside class="roadmap-panel" aria-label="雲端工程師學習進度">
+            <div class="roadmap-header">
+              <div>
+                <p class="roadmap-eyebrow">Cloud Engineer Roadmap</p>
+                <h2>學習進度 (點擊技能展開詳情)</h2>
+              </div>
+
+              <div class="roadmap-total">
+                <span id="roadmap-total-percent">0%</span>
+              </div>
+            </div>
+
+            <div class="roadmap-total-bar">
+              <span id="roadmap-total-bar"></span>
+            </div>
+
+            <div class="roadmap-list" id="roadmap-list"></div>
+          </aside>
         </div>
       </section>
 
       <section id="about" class="section">
         <div class="container">
-          <div class="section-heading"><h2>自我介紹</h2></div>
-              <div class="about-layout">
-                <div class="about-text">
-                  <div id="about-content"></div>
+          <div class="section-heading">
+            <h2>自我介紹</h2>
+          </div>
 
-                  <div class="about-actions">
-                    <a
-                      class="button button-primary"
-                      id="profile-transcript"
-                      href="public/dsy_transcript.pdf"
-                      download
-                    >
-                      點擊下載我的成績單
-                    </a>
-                  </div>
-                </div>
+          <div class="about-layout">
+            <div class="about-text">
+              <div id="about-content"></div>
 
-                <div class="about-image-wrapper">
-                  <img
-                    class="about-image"
-                    id="about-avatar"
-                    src="public/images/me.png"
-                    alt="大頭照"
-                  />
-                </div>
+              <div class="about-actions">
+                <a
+                  class="button button-primary"
+                  id="profile-transcript"
+                  href="public/dsy_transcript.pdf"
+                  download
+                >
+                  點擊下載我的成績單
+                </a>
               </div>
+            </div>
+
+            <div class="about-image-wrapper">
+              <img
+                class="about-image"
+                id="about-avatar"
+                src="public/images/me.png"
+                alt="大頭照"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -173,6 +202,7 @@
     </footer>
 
     <script src="src/data/profile.js"></script>
+    <script src="src/data/roadmap.js"></script>
     <script src="src/data/about.js"></script>
     <script src="src/data/projects.js"></script>
     <script src="src/data/school-projects.js"></script>
@@ -180,6 +210,7 @@
 
     <script src="src/js/icons.js"></script>
     <script src="src/js/render-profile.js"></script>
+    <script src="src/js/render-roadmap.js"></script>
     <script src="src/js/render-about.js"></script>
     <script src="src/js/render-projects.js"></script>
     <script src="src/js/render-school-projects.js"></script>

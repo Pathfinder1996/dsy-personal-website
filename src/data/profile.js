@@ -1,11 +1,14 @@
 const profileData = {
   name: "戴聖宴",
-  description: "熱衷於學習新技術，並將其應用於個人專案中。",
+  description: "雲端工程師學習中...",
+  careerGoal: "職涯目標: Cloud Engineer → DevOps → SRE → Cloud Architect",
   resumeUrl: "public/dsy_resume.pdf",
+
   avatar: {
     src: "public/images/me.png",
     alt: "大頭照",
   },
+
   links: [
     {
       name: "GitHub",
